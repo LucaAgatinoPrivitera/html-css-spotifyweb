@@ -13,6 +13,9 @@
     --site-text-grey: rgb(128, 126, 126);
 }
 .padding-bottom{
+    padding-bottom: 1rem;
+}
+.padding-bottom2{
     padding-bottom: 2rem;
 }
 body{
@@ -20,7 +23,7 @@ body{
 }
 /* Header */
 header{
-    height: calc(100vh - 6rem);
+    height: 94vh;
     width: 10%;
     background-color: var(--site-black);
     position: fixed;
@@ -78,7 +81,7 @@ nav a{
 /* Library */
 .library{
     background-color: var(--site-lightblue);
-    padding: 1rem;
+    padding: 2rem;
 }
 .library-explore{
     display: flex;
@@ -93,4 +96,35 @@ nav a{
 
 .recent{
     color: var(--site-white);
+}
+.recent-song-image{
+    width: 200px;
+}
+.recent h3{
+    color: var(--site-white);
+    text-align: center;
+}
+.recent span{
+    color: var(--site-text-grey);
+}
+.recent h3,
+.recent span{
+    display: block;
+    text-align: center;
+}
+.recent-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.recent-container-item *{
+    margin-bottom: 0.5rem;
+}
+
+.footer{
+    display: fixed;
+    bottom: 0;
+    background-color: var(--site-grey);
+    height: 6vh;
 }
