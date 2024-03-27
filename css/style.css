@@ -24,7 +24,7 @@ body{
 }
 /* Header */
 header{
-    height: 85vh;
+    height: 90vh;
     width: 10%;
     background-color: var(--site-black);
     position: fixed;
@@ -59,11 +59,14 @@ nav a{
     margin-left: 10%;
 }
 .ads{
-    background-color: var(--site-blue);
+    background-color: var(--site-grey);
     height: 6rem;
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
+    top: 0;
+    right: 0;
+    width: 100%;
 }
 .ads a{
     padding: 1.25rem;
@@ -119,8 +122,14 @@ nav a{
     justify-content: space-between;
     gap: 2rem;
 }
+.recent-container-item{
+    width: 40%;
+    gap: 1rem;
+}
 .recent-container-item *{
     margin-bottom: 0.5rem;
+    /* width: 30%; */
+    width: 100%;
 }
 
 /* FOOTER */
@@ -128,12 +137,13 @@ footer{
     position: fixed;
     bottom: 0;
     background-color: var(--site-grey);
-    height: 15vh;
+    height: 10vh;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 .footer-container{
     display: flex;
+    justify-content: space-between;
 }
 /* SINISTRA */
 .left{
@@ -141,10 +151,12 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
 }
 .left img{
     object-fit: cover;
-    width: 50px;
+    width: 25px;
+    height: 25px;
 }
 .left h4{
     color: var(--site-white);
@@ -157,26 +169,38 @@ footer{
     flex-direction: column;
     color: var(--site-text-lightgrey);
     justify-content: space-around;
+    gap: 0.5rem;
 }
 /* CENTRALE */
 .middle{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-#middle-up{
-    font-size: 1.3rem;
+    gap: 0.3rem;
+    font-size: 1rem;
+    justify-content: space-around;
 }
 #middle-up,
 #middle-down{
     color: var(--site-white);
     display: flex;
-    gap: 1rem;
+    gap: 0.3rem;
     justify-content: space-between;
     align-items: center;
 }
+#middle-up{
+    font-size: 1.5rem;
+    gap: 1rem;
+}
 .bar{
-    width: 200px;
+    width: 100px;
     background-color: var(--site-white);
     height: 0.3rem;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(128,126,126,1) 100%);
+}
+
+#right{
+    color: var(--site-white);
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
 }
