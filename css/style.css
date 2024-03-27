@@ -41,3 +41,22 @@ nav a{
 }
 
 /* Main */
+.ads{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 96%;
+    background-color: var(--site-grey);
+    height: 6rem;
+}
+.ads a{
+    padding: 1.25rem;
+    background-color: var(--site-grey);
+    border: 1px solid var(--site-white);
+    color: var(--site-white);
+    text-decoration: none;
+    border-radius: 2rem;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
