@@ -148,6 +148,9 @@ nav a{
     justify-content: space-between;
     gap: 2rem;
 }
+.recent-container:last-child{
+    margin-bottom: 10vh;
+}
 .recent-container-item{
     width: 40%;
     gap: 1rem;
@@ -156,6 +159,9 @@ nav a{
     margin-bottom: 0.5rem;
     /* width: 30%; */
     width: 100%;
+}
+.listen{
+    color: var(--site-text-grey);
 }
 
 /* FOOTER */
@@ -455,5 +461,30 @@ footer{
         background-color: var(--site-white);
         height: 0.3rem;
         background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(128,126,126,1) 100%);
+    }
+}
+
+/* LARGE */
+@media screen and (min-width: 1200px){
+    header{
+        width: 20%;
+    }
+    .main-container{
+        width: 80%;
+        margin-left: 20%;
+    }
+    #header-up .playlist a:nth-child(2){
+        gap: 0.5rem;
+    }
+
+    .recent-container-item{
+        width: calc((100% /6) - 1rem);
+    }
+    
+    .middle #middle-up{
+        width: 50%;
+    }
+    .middle #middle-down .bar{
+        width: 80%;
     }
 }
