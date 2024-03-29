@@ -173,7 +173,7 @@ footer{
 }
 /* SINISTRA */
 .left{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -375,5 +375,85 @@ footer{
     }
     #right .bar{
         width: 100%;
+    }
+}
+/* MEDIUM */
+@media screen and (min-width: 992px){
+    nav{
+        align-items: unset;
+    }
+    #header-up #marchio{
+        width: 50%;
+    }
+
+
+    .library{
+        padding-top: 1rem;
+    }
+    .library-explore{
+        gap: 2.5rem;
+    }
+    .recent-container{
+        justify-content: unset;
+        gap: 0.8rem;
+        padding-bottom: 2rem;
+    }
+    .recent-container-item{
+        width: calc(25% - 0.999999rem);
+        height: 100%;
+        text-align: center;
+    }
+    .recent-container-item p{
+        color: var(--site-text-grey);
+    }
+    .recent-song-image{
+        object-fit: cover;
+        display: block;
+        margin: auto;
+    }
+
+    .left,
+    .middle,
+    #right{
+        width: calc(33% - 2rem);
+        margin: auto;
+        justify-content: space-between;
+    }
+    .left{
+        justify-content: flex-start;
+    }
+    .middle{
+        justify-content: center;
+    }
+    #right{
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+    .left-icon{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .left img{
+        width: 50px;
+        height: 50px;
+    }
+    .middle #middle-up{
+        width: 75%;
+        gap: 1rem;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .middle #middle-down .bar{
+        width: 70%;
+        gap: 0.5rem;
+        justify-content: space-around;
+        margin: auto;
+    }
+    #right .bar{
+        width: 9rem;
+        background-color: var(--site-white);
+        height: 0.3rem;
+        background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(128,126,126,1) 100%);
     }
 }
