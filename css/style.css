@@ -129,6 +129,19 @@ nav a{
 }
 .recent-song-image{
     width: 200px;
+    z-index: 100;
+    position: relative;
+}
+.recent-song-image:hover{
+    z-index: 4;
+    opacity: 0.5;
+}
+div .onlyhover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 1;
 }
 .recent h3{
     color: var(--site-white);
@@ -154,6 +167,7 @@ nav a{
 .recent-container-item{
     width: 40%;
     gap: 1rem;
+    position: relative;
 }
 .recent-container-item *{
     margin-bottom: 0.5rem;
