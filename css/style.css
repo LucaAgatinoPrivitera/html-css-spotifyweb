@@ -172,7 +172,14 @@ footer{
     height: 10vh;
     width: 100%;
     padding: 1rem;
+    z-index: 10000;
 }
+@media screen and (max-height: 351px){
+    footer{
+        height: 80px;
+    }
+}
+
 .footer-container{
     display: flex;
     justify-content: space-between;
