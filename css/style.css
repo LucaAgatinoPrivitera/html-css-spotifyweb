@@ -75,6 +75,10 @@ nav a{
     display: block;
     margin: auto;
 }
+#header-up a:hover,
+#header-down a:hover{
+    color: var(--site-white);
+}
 
 #small{
     font-size: 1rem;
@@ -107,6 +111,9 @@ nav a{
     right: 20px;
     font-size: 0.8rem;
 }
+.ads a:hover{
+    transform: scale(1.1);
+}
 
 /* Library */
 .library{
@@ -122,6 +129,9 @@ nav a{
 .library-explore a{
     text-decoration: none;
     color: var(--site-text-grey);
+}
+.library-explore a:hover{
+    color: var(--site-white);
 }
 
 .recent{
@@ -224,6 +234,16 @@ footer{
     justify-content: space-around;
     gap: 0.5rem;
 }
+#song-name{
+    color: var(--site-text-grey);
+}
+#song-name:hover{
+    color: white;
+}
+.fa-heart:hover,
+.fa-folder:hover{
+    color: white;
+}
 /* CENTRALE */
 .middle{
     display: flex;
@@ -244,11 +264,17 @@ footer{
     font-size: 1.5rem;
     gap: 1rem;
 }
+.fa-circle-pause:hover{
+    color: white;
+}
 .bar{
     width: 60%;
     background-color: var(--site-white);
     height: 0.3rem;
     background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(128,126,126,1) 100%);
+}
+.bar:hover{
+    background: linear-gradient(90deg, rgba(125,209,29,1) 0%, rgba(125,209,29,1) 25%, rgba(128,126,126,1)25%, rgba(128,126,126,1) 100%);
 }
 
 #right{
@@ -482,6 +508,9 @@ footer{
         background-color: var(--site-white);
         height: 0.3rem;
         background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(128,126,126,1) 100%);
+    }
+    #right .bar:hover{
+        background: linear-gradient(90deg, rgba(125,209,29,1) 0%, rgba(125,209,29,1) 25%, rgba(128,126,126,1)25%, rgba(128,126,126,1) 100%);
     }
 }
 
