@@ -119,6 +119,7 @@ nav a{
 .library{
     background-color: var(--site-lightblue);
     padding: 2rem;
+    height: calc((100vh - 10vh) - 6rem);
 }
 .library-explore{
     display: flex;
