@@ -279,6 +279,10 @@ footer{
     font-size: 1.5rem;
     gap: 1rem;
 }
+#middle-down progress{
+    width: 100%;
+    margin: 0 0.5rem;
+}
 .fa-circle-pause:hover{
     color: white;
 }
@@ -297,6 +301,9 @@ footer{
     display: flex;
     gap: 0.3rem;
     align-items: center;
+}
+#right progress{
+    width: 20%;
 }
 
 /* TABLET */
