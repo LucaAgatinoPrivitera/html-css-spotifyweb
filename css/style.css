@@ -147,10 +147,22 @@ nav a{
     z-index: 4;
     opacity: 0.5;
 }
+.recent-song-image:not(:hover){
+    z-index: 6;
+    opacity: 1;
+}
 div .onlyhover{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
+    opacity: 1;
+}
+div .onlyhover:hover{
+    z-index: 5;
+    opacity: 1;
+}
+div .onlyhover:not(:hover){
     z-index: 5;
     opacity: 1;
 }
@@ -206,8 +218,10 @@ footer{
 }
 
 .footer-container{
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 /* SINISTRA */
 .left{
