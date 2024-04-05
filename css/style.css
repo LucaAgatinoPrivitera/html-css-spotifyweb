@@ -79,6 +79,13 @@ nav a{
 #header-down a:hover{
     color: var(--site-white);
 }
+.playlist{
+    width: 10rem;
+}
+.playlist-container{
+    height: 39rem;
+    overflow: scroll;
+}
 
 #small{
     font-size: 1rem;
